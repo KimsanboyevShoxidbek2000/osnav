@@ -264,7 +264,7 @@ $color-yellow2:#FFEE32;
       
          
          
-     }
+     } 
  }
 }
 
@@ -347,3 +347,141 @@ $color-yellow2:#FFEE32;
     }
     
 }
+
+// footer section start
+.footer{
+    padding: 1.3rem 5%;
+    background: $color-bg;
+    height: 35vh;
+    .container-fluid{
+        .row{
+            .col-sm-4{
+                &:nth-child(1){
+                     background:$color-bg;
+                     padding:1rem;
+                     .brand{
+                       
+                        h4{
+                            display: flex;
+                            align-items: center;
+                            justify-content: start;
+                            span{
+                                border-radius: 5px;
+                                padding: 0  4px;
+                                background: $color-yellow2;
+                                color: $color-text-black;
+                            }
+                            div{
+                                margin: 0 4px;
+                            }
+                        }
+                        p{
+                            color: $color-text;
+                        }
+                       
+                        
+                    }
+                    .icons{
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+                        .fa{
+                            display:flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 1.6rem;
+                            cursor: pointer;
+                            margin: 0 0.4rem;
+                            width: 45px;
+                            min-width: 45px;
+                            height: 45px;
+                            min-height: 45px;
+                            border-radius: 50%;
+                            background: $color-bg;
+                            color: $color-yellow2;
+                            border: 0.1rem solid $color-yellow2;
+                            &:nth-child(1){
+                                margin-left: 0;
+                            }
+                            &:hover{
+                                color: $color-yellow1;
+                                border: 0.1rem solid $color-yellow1;
+                            }
+                        }
+                    }
+                }
+                &:nth-child(2){
+                    padding: 0;
+                    ul{
+                        li{
+                             list-style: none;
+                             padding: 0.2rem 0;
+                            a{
+                                text-decoration: none;
+                                color: $color-text;
+                                font-size: 1rem;
+                                &:hover{
+                                    color: $color-yellow2;
+                                  
+                                }
+                            }
+
+                        }
+                    }
+                }
+                &:nth-child(3){
+                    div{
+                        h5{
+                            margin-bottom: 1rem;
+                            color: $color-text;
+                        }
+                        .fa{
+                            display:flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 1.6rem;
+                            cursor: pointer;
+                            margin: 0 0.4rem;
+                            width: 45px;
+                            min-width: 45px;
+                            height: 45px;
+                            min-height: 45px;
+                            border-radius: 50%;
+                            background: $color-bg;
+                            color: $color-yellow2;
+                            border: 0.1rem solid $color-yellow2;
+                            &:nth-child(1){
+                                margin-left: 0;
+                            }
+                            &:hover{
+                                color: $color-yellow1;
+                                border: 0.1rem solid $color-yellow1;
+                            }
+                        }  
+                        p{
+                            color: $color-text;
+                        }
+                    }
+                }
+                padding-left:6rem !important;
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .footer{
+        min-height: 600px;
+        .container-fluid{
+            .row{
+                .col-sm-4{
+                 padding: 0 !important;
+                }
+            }
+        }
+    }
+    
+}
+
+
+
+
