@@ -321,6 +321,28 @@
   border-radius: 50%;
 }
 
+.offcanvas .offcanvas-body .dropdown .accordion .accordion-item .accordion-header:focus {
+  border: none;
+  outline: none;
+}
+
+.offcanvas .offcanvas-body .dropdown .accordion .accordion-item .accordion-header .accordion-button:focus {
+  border-color: #202020;
+  background: #FFEE32;
+  color: #202020;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.offcanvas .offcanvas-body .dropdown .accordion .accordion-item .accordion-collapse .accordion-body ul li {
+  list-style: none;
+}
+
+.offcanvas .offcanvas-body .dropdown .accordion .accordion-item .accordion-collapse .accordion-body ul li a {
+  text-decoration: none;
+  color: black;
+}
+
 .modal {
   margin-top: 100px;
 }
@@ -328,7 +350,7 @@
 .modal .modal-dialog .modal-content {
   position: relative;
   height: 25rem;
-  width: 35rem !important;
+  width: 35rem;
   padding: 0.5rem;
 }
 
@@ -419,6 +441,17 @@
 
 .modal .modal-dialog .modal-content form input::placeholder {
   color: #b4acac;
+}
+
+@media (max-width: 576px) {
+  .modal .modal-dialog .modal-content {
+    width: 98%;
+    margin: auto;
+    height: 300px;
+  }
+  .modal .modal-dialog .modal-content form input {
+    margin: 0;
+  }
 }
 
 .Corusel {
@@ -620,9 +653,15 @@
   color: #fff;
 }
 
+@media (max-width: 1117px) {
+  .footer {
+    height: 600px;
+  }
+}
+
 @media (max-width: 576px) {
   .footer {
-    min-height: 600px;
+    height: 500px;
   }
   .footer .container-fluid .row .col-sm-4 {
     padding: 0 !important;
